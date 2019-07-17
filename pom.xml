@@ -5,7 +5,7 @@
     <groupId>com.edurekademo.tutorial</groupId>
     <artifactId>addressbook</artifactId>
     <packaging>war</packaging>
-    <version>2.0</version>
+    <version>1.0-SNAPSHOT</version>
     <name>Vaadin Addressbook example</name>
 
     <properties>
@@ -14,6 +14,17 @@
         <vaadin.version>8.0.0.alpha2</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
     </properties>
+
+	<distributionManagement>
+  <repository>
+  <id>release</id>
+  <url>http://3.86.240.65:8081/nexus/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+  <id>snapshots</id>
+  <url>http://3.86.240.65:8081/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+  </distributionManagement>
 
     <repositories>
         <repository>
